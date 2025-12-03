@@ -1,6 +1,6 @@
 # RNN-for-EPF
 ## Overview
-The script implements a full neural forecasting pipeline for hourly electricity price prediction using hybrid recurrent-linear models (RLM-KF-RNN). Combines preprocessing, feature engineering, training, forecast decomposition, and Optuna optimization with a focus on robustness, interpretability, and modularity.
+The script implements a full neural forecasting pipeline for hourly electricity price prediction using hybrid recurrent-linear models (ELM-KF-RNN). Combines preprocessing, feature engineering, training, forecast decomposition, and Optuna optimisation with a focus on robustness, interpretability, and modularity.
 ## Model Architectures
 Seven model variants are included to capture different temporal and nonlinear relationships:
 
@@ -8,9 +8,9 @@ Seven model variants are included to capture different temporal and nonlinear re
 |:------|:-------------|
 | **M1** | RNN with ReLU activation |
 | **M2** | RNN with Identity activation |
-| **M3** | Reduced Linear (OLS benchmark) |
-| **M4** | Linear + RNN (ReLU) hybrid |
-| **M5** | Linear + RNN (Identity) hybrid |
+| **M3** | Expert Linear (OLS benchmark) |
+| **M4** | Expert Linear + RNN (ReLU) hybrid |
+| **M5** | Expert Linear + RNN (Identity) hybrid |
 | **M6** | Dual RNNs (ReLU + Identity) |
 | **M7** | Full hybrid (two RNNs + linear skip) |
 
